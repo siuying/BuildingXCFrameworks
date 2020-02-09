@@ -13,8 +13,8 @@
 		541C5DDC23EFECD100A026C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDA23EFECD100A026C7 /* Main.storyboard */; };
 		541C5DDE23EFECD200A026C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDD23EFECD200A026C7 /* Assets.xcassets */; };
 		541C5DE123EFECD200A026C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDF23EFECD200A026C7 /* LaunchScreen.storyboard */; };
-		541C5E2423EFFB5000A026C7 /* Sample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541C5E2323EFFB5000A026C7 /* Sample.xcframework */; };
-		541C5E2523EFFB5000A026C7 /* Sample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 541C5E2323EFFB5000A026C7 /* Sample.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		543E9A2A23EFFE7100387FFE /* Sample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E9A2923EFFE7100387FFE /* Sample.xcframework */; };
+		543E9A2B23EFFE7100387FFE /* Sample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543E9A2923EFFE7100387FFE /* Sample.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				541C5E2523EFFB5000A026C7 /* Sample.xcframework in Embed Frameworks */,
+				543E9A2B23EFFE7100387FFE /* Sample.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,8 @@
 		541C5DDD23EFECD200A026C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541C5DE023EFECD200A026C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541C5DE223EFECD200A026C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		541C5E2323EFFB5000A026C7 /* Sample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sample.xcframework; path = ../1_Producer/Frameworks/static/Sample.xcframework; sourceTree = "<group>"; };
+		542AC78123EFFF2800F17B41 /* FrameworkConsumer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrameworkConsumer.entitlements; sourceTree = "<group>"; };
+		543E9A2923EFFE7100387FFE /* Sample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sample.xcframework; path = ../1_Producer/Frameworks/static/Sample.xcframework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541C5E2423EFFB5000A026C7 /* Sample.xcframework in Frameworks */,
+				543E9A2A23EFFE7100387FFE /* Sample.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +76,7 @@
 		541C5DD323EFECD100A026C7 /* FrameworkConsumer */ = {
 			isa = PBXGroup;
 			children = (
+				542AC78123EFFF2800F17B41 /* FrameworkConsumer.entitlements */,
 				541C5DD423EFECD100A026C7 /* AppDelegate.swift */,
 				541C5DD623EFECD100A026C7 /* SceneDelegate.swift */,
 				541C5DD823EFECD100A026C7 /* ViewController.swift */,
@@ -89,7 +91,7 @@
 		541C5DE823EFECE400A026C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				541C5E2323EFFB5000A026C7 /* Sample.xcframework */,
+				543E9A2923EFFE7100387FFE /* Sample.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,7 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FrameworkConsumer/FrameworkConsumer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 8JPQSRV9T5;
 				INFOPLIST_FILE = FrameworkConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +325,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.FrameworkConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,7 +335,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FrameworkConsumer/FrameworkConsumer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 8JPQSRV9T5;
 				INFOPLIST_FILE = FrameworkConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ignition.FrameworkConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
