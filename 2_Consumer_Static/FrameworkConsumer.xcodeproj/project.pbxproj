@@ -15,7 +15,7 @@
 		541C5DE123EFECD200A026C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDF23EFECD200A026C7 /* LaunchScreen.storyboard */; };
 		543E9A2A23EFFE7100387FFE /* Sample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E9A2923EFFE7100387FFE /* Sample.xcframework */; };
 		543E9A2B23EFFE7100387FFE /* Sample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543E9A2923EFFE7100387FFE /* Sample.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		5461CCF423F317A600729316 /* Foo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461CCF323F317A600729316 /* Foo.xcframework */; };
+		5461CCFC23F31D0700729316 /* Foo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461CCFB23F31D0700729316 /* Foo.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		542AC78123EFFF2800F17B41 /* FrameworkConsumer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrameworkConsumer.entitlements; sourceTree = "<group>"; };
 		543E9A2923EFFE7100387FFE /* Sample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sample.xcframework; path = ../1_Producer/Frameworks/static/Sample.xcframework; sourceTree = SOURCE_ROOT; };
 		5461CCB723F2C4EE00729316 /* FrameworkConsumer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkConsumer-Bridging-Header.h"; sourceTree = "<group>"; };
-		5461CCF323F317A600729316 /* Foo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Foo.xcframework; path = ../4_Producer_Swift/Frameworks/static/Foo.xcframework; sourceTree = "<group>"; };
+		5461CCFB23F31D0700729316 /* Foo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Foo.xcframework; path = ../4_Producer_Swift/Frameworks/static/Foo.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5461CCF423F317A600729316 /* Foo.xcframework in Frameworks */,
+				5461CCFC23F31D0700729316 /* Foo.xcframework in Frameworks */,
 				543E9A2A23EFFE7100387FFE /* Sample.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,8 +96,8 @@
 		541C5DE823EFECE400A026C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5461CCFB23F31D0700729316 /* Foo.xcframework */,
 				543E9A2923EFFE7100387FFE /* Sample.xcframework */,
-				5461CCF323F317A600729316 /* Foo.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

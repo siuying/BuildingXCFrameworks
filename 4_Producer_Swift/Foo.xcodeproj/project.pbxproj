@@ -10,14 +10,15 @@
 		5461CCDB23F314B400729316 /* Foo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5461CCD923F314B400729316 /* Foo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5461CCE223F314C100729316 /* FooFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461CCE123F314C100729316 /* FooFactory.swift */; };
 		5461CCF223F3176900729316 /* FooFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461CCE123F314C100729316 /* FooFactory.swift */; };
+		5461CCFA23F31C5900729316 /* Foo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5461CCD923F314B400729316 /* Foo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5461CCE523F3150300729316 /* CopyFiles */ = {
+		5461CCF823F31C3F00729316 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +89,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5461CCF923F31C5100729316 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5461CCFA23F31C5900729316 /* Foo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +122,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5461CCED23F3150300729316 /* Build configuration list for PBXNativeTarget "FooStatic" */;
 			buildPhases = (
+				5461CCF923F31C5100729316 /* Headers */,
 				5461CCE323F3150300729316 /* Sources */,
 				5461CCE423F3150300729316 /* Frameworks */,
-				5461CCE523F3150300729316 /* CopyFiles */,
+				5461CCF823F31C3F00729316 /* CopyFiles */,
 			);
 			buildRules = (
 			);
