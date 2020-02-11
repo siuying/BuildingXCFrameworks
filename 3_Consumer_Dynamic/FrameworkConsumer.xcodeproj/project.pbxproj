@@ -15,6 +15,7 @@
 		541C5DDC23EFECD100A026C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDA23EFECD100A026C7 /* Main.storyboard */; };
 		541C5DDE23EFECD200A026C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDD23EFECD200A026C7 /* Assets.xcassets */; };
 		541C5DE123EFECD200A026C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C5DDF23EFECD200A026C7 /* LaunchScreen.storyboard */; };
+		5461CCF123F316DF00729316 /* Foo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461CCF023F316DF00729316 /* Foo.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		541C5DE023EFECD200A026C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541C5DE223EFECD200A026C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542AC78223EFFF2D00F17B41 /* FrameworkConsumer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrameworkConsumer.entitlements; sourceTree = "<group>"; };
+		5461CCF023F316DF00729316 /* Foo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Foo.xcframework; path = ../4_Producer_Swift/Frameworks/dynamic/Foo.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5461CCF123F316DF00729316 /* Foo.xcframework in Frameworks */,
 				5415B0B023EFFE2E00FD68C4 /* Sample.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5415B0AF23EFFE2E00FD68C4 /* Sample.xcframework */,
+				5461CCF023F316DF00729316 /* Foo.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
